@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BookLizard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f7f7f7;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .download {
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .download a {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .download a:hover {
+      background: #43a047;
+    }
+
+    ul {
+      line-height: 1.7;
+    }
+
+    code {
+      background: #eee;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 0.95em;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      color: #666;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1> BookLizard 📚🦎 </h1>
+    <p class="tagline">
+      A lightweight, distraction-free desktop e-reader for macOS.
+    </p>
+
+    <p>
+      BookLizard is a simple, portable e-reader built with Python and Tkinter.
+      Drop in your <code>.txt</code> or <code>.rtf</code> files and start reading instantly.
+    </p>
+
+    <div class="download">
+      <a href="https://github.com/NovaQuill1/BookLizard/">
+        Download for macOS
+      </a>
+    </div>
+
+    <h2> Features</h2>
+    <ul>
+      <li>Clean, minimal reading interface</li>
+      <li>Multiple built-in reading themes</li>
+      <li>Keyboard navigation (arrow keys to turn pages)</li>
+      <li>Book selector and theme selector menu</li>
+      <li>User-editable books folder</li>
+      <li>Portable macOS <code>.app</code></li>
+    </ul>
+
+    <h2> Adding Books</h2>
+    <p>
+      On first launch, BookLizard creates a folder at:
+    </p>
+    <p>
+      <code>~/Documents/BookLizard/books</code>
+    </p>
+    <p>
+      Drop your <code>.txt</code> or <code>.rtf</code> files into this folder,
+      reopen BookLizard, and select a book from the menu.
+    </p>
+
+    <h2> Controls</h2>
+    <ul>
+      <li><code>←</code> / <code>→</code> — Turn pages</li>
+      <li><code>ESC</code> — Open menu</li>
+      <li><code>TAB</code> — Switch menu pages</li>
+      <li><code>1–9</code> — Select book or theme</li>
+    </ul>
+
+    <h2>⚠️ macOS Security Notice ⚠️</h2>
+    <p>
+      Because BookLizard is not distributed through the App Store,
+      macOS may block it on first launch.
+    </p>
+    <p>
+      To open it:
+    </p>
+    <ol>
+      <li>Right-click <strong>BookLizard.app</strong></li>
+      <li>Select <strong>Open</strong></li>
+      <li>Click <strong>Open</strong> again</li>
+    </ol>
+    <p>
+      You only need to do this once.
+    </p>
+
+    <footer>
+      © BookLizard • Built with Python & Tkinter
+    </footer>
+  </div>
+
+</body>
+</html>
