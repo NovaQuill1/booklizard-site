@@ -1,1 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book Lizard 📚🦎</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <style>
+    :root {
+      --bg: #f4f1ea;
+      --text: #1e1e1e;
+      --muted: #555;
+      --card: #ffffff;
+      --accent: #2f6f4f;
+      --accent-hover: #24573d;
+      --shadow: rgba(0, 0, 0, 0.12);
+    }
+
+    body.dark {
+      --bg: #121212;
+      --text: #f0f0f0;
+      --muted: #aaa;
+      --card: #1e1e1e;
+      --accent: #4caf7a;
+      --accent-hover: #3e8f66;
+      --shadow: rgba(0, 0, 0, 0.4);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    .toggle {
+      background: none;
+      border: 1px solid var(--muted);
+      color: var(--text);
+      padding: 8px 14px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+
+    .hero h2 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto 40px;
+    }
+
+    .download {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: 16px 32px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .download:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+    }
+
+    /* Screenshot */
+    .screenshot {
+      margin: 80px 0;
+      text-align: center;
+    }
+
+    .screenshot img {
+      width: 100%;
+      max-width: 900px;
+      border-radius: 14px;
+      box-shadow: 0 20px 40px var(--shadow);
+    }
+
+    /* Features */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin-top: 80px;
+    }
+
+    .feature {
+      background: var(--card);
+      padding: 30px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px var(--shadow);
+      transition: transform 0.2s ease;
+    }
+
+    .feature:hover {
+      transform: translateY(-4px);
+    }
+
+    .feature h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 100px;
+      padding-top: 40px;
+      border-top: 1px solid var(--muted);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>Book Lizard 📚🦎</h1>
+      <button class="toggle" onclick="toggleDark()">🌙 Toggle Dark</button>
+    </header>
+
+    <section class="hero">
+      <h2>More projects by NovaQuill!</h2>
+      <p>
+        While Book Lizard is my favorite, I still have more projects to sharre.
+      </p>
+
+      <a class="download"
+         href="https://github.com/NovaQuill1/BookLizard/">
+        TinyCapitalism
+      </a>
+    </section>
+
+    <footer>
+      Built with Python & Tkinter • Book Lizard by NovaQuill
+    </footer>
+
+  </div>
+
+  <script>
+    function toggleDark() {
+      document.body.classList.toggle("dark");
+    }
+  </script>
+
+</body>
+</html>
